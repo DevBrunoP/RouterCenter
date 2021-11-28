@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'mad_hackeritalic';
+    src: 
+    
+    url(/fonts/Mad\ Hacker.ttf);
+    
+    
+    font-style: normal;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(255,233,207);
+    font-family: 'Outfit', sans-serif;
+}
+
+/*  Efeitos aplicados ao cabecalho do projeto  */
+
+.cabecalho{
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 10px 15px 0px 20px;
+    background-image:linear-gradient(rgba(255, 136, 0, 0.5), rgba(255,255,255,0.5)), url(../fotos/coffee.jpg);
+    background-position: right;
+    background-size: cover;    
+}
+
+
+.cabecalho-titulo{
+    font-family: 'mad_hackeritalic';
+    text-align: right;
+    cursor: default;
+    
+}
+.cabecalho-paragrafo{
+    line-height: 35px;
+    text-align: right;
+    font-size: 18px;
+    cursor: default;
+}
+
+
+/*  Efeitos aplicados ao corpo do projeto  */
+
+.corpo{
+    margin: 0;
+    width: 65%;
+    margin-left: 35%;
+    padding: 50px;
+}
+.corpo-titulo{
+    color: rgba(151, 106, 71, 1);
+    cursor: default;
+    margin-top: 60px;
+} 
+.corpo-paragrafo{
+    color: rgba(151, 106, 71, 1);
+    cursor: default;
+}
+
+.corpo-subtitulo{
+    color:rgba(151, 106, 71, 1);
+    padding: 0px;
+    display: inline-block;
+    cursor: default;
+    
+}
+.corpo-itens{
+    background-image: linear-gradient(rgba(151, 106, 71, 0.5), rgba(151, 106, 71, 0.5));
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgba(255,233,207);
+    padding: 0.8em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.corpo-itens:hover{
+    color: rgba(151, 106, 71, 0.781);
+    background-image: linear-gradient(rgba(255,233,207), white);
+    transition: .5s;
+}
+
+
+.corpo-multilaser{
+    display: grid;
+    grid-template-areas: 
+    "m-1 m-2 m-3"
+    "m-4 m-5 m-6"
+    "m-7 m-8 m-9"
+    ;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-gap: 5px;  
+    width: 100%;
+    height: 200px;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to bottom right, transparent, rgba(223, 224, 223, 0.5)),url(/fotos/desk.jpg);
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px 50px;
+  
+}
+.corpo-intelbras{
+    display: grid;
+    grid-template-areas: 
+    "i-1  i-2  i-3"
+    "i-4  i-5  i-6"
+    "i-7  i-8  i-9"
+    "i-10 i-11 i-12"
+    "i-13 i-14 i-15"
+    ;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-gap: 1px; 
+    width: 100%;
+    height: 325px;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to bottom right, transparent, rgba(192, 252, 241, 0.5)),url(/fotos/workspace.jpg);
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px 50px;
+}
+
+.corpo-tplink{
+    display: grid;
+    grid-template-areas: 
+    "t-1  t-2  t-3  t-4"
+    "t-5  t-6  t-7  t-8"
+    "t-9  t-10 t-11 t-12"
+    "t-13 t-14 t-15 t-16"
+    "t-17 t-18 t-19 t-20"
+    "t-21 t-21 t-21 t-21"
+    ;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-gap: 1px; 
+    width: 100%;
+    height: 350px;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to bottom right, transparent, rgba(255, 136, 0, 0.5)),url(/fotos/office.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 10px 50px;
+}
+.corpo-intelbras .corpo-itens{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0.8em;
+}
+.corpo-tplink .corpo-itens{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0.5em;
+}
+
+.link{
+    display: flex;
+    background-color: #000000;
+    color: #0cbd0c;
+    font-family: monospace;
+    padding: 3%;
+    width: 185px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px black;
+    cursor: pointer;
+}
+.link:hover{
+    background-color:#3d3d3d ;
+    transition: 1s;
+}
+
+img{
+    
+    width: 100%;
+  
+    
+
+}
+
+/*  Efeitos aplicados ao rodapé do projeto  */
+
+.rodape{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    padding: 100px 15px 0px 20px;
+
+}
+.redeslogo{
+    margin: 0px 0px 0px 10px
+}
+
+.rodape-icones{
+    display: flex;
+    justify-content: flex-end;
+}
+.icone{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 0px 0px 30px; 
+}
+
+.fa-facebook-square:hover{
+    color: #3b5998;
+    transition: .2s;
+}
+.fa-facebook-square:before{
+    content: '';
+    transition: all .5s ease;
+}
+
+.fa-github-square:hover{
+    color: white;
+    transition: all .2s ease;   
+}
+.fa-github-square:before{
+    content: '';
+    transition: all .5s ease;
+}
+
+
+.fa-instagram:hover{
+    color: #dd2a7b;
+    transition: .2s;
+}
+.fa-instagram:before{
+    content: '';
+    transition: all .5s ease;
+}
+
+.rodape-icones a{
+    cursor: default;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+
+}
+
+.copy-paragrafo{
+    padding: 5px 0px;
+    margin: 0;
+    text-align: right;
+    color: black;
+    cursor: default;
+}
+
+
+.contato{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 0px;
+
+}
+
+.auto{
+    
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 20;
+    letter-spacing: 10px;
+}
+
